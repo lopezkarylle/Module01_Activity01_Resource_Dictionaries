@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module01_Activity01.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="white" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to PDC60!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Module01 - Activity01" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="This is the Module 01 - Activity 01 in PDC60. This is Xamarin using the different levels of ResourceDictionary reference. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more here "/>
+                        <Span Text="https://github.com/lopezkarylle" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Clicked="OpenPage1">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="BackgroundColor" Value="#2196F3"/>
+                    <!-- Use a Color constant or a hexadecimal color value -->
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="CornerRadius" Value="10"/>
+                    <Setter Property="Text" Value="View-Specific Resource Dictionaries"/>
+                    <Setter Property="WidthRequest" Value="300" />
+                    <Setter Property="HeightRequest" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Clicked="OpenPage2">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="BackgroundColor" Value="#FF69B4"/>
+                    <!-- Use a Color constant or a hexadecimal color value -->
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="CornerRadius" Value="10"/>
+                    <Setter Property="Text" Value="Layout-Specific Resource Dictionaries"/>
+                    <Setter Property="WidthRequest" Value="300" />
+                    <Setter Property="HeightRequest" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Clicked="OpenPage3">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="BackgroundColor" Value="#2196F3"/>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="CornerRadius" Value="10"/>
+                    <Setter Property="Text" Value="Page-Level Resource Dictionaries"/>
+                    <Setter Property="WidthRequest" Value="300" />
+                    <Setter Property="HeightRequest" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Label>
+            <Label.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="BackgroundColor" Value="#FF69B4"/>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="WidthRequest" Value="200" />
+                    <Setter Property="HeightRequest" Value="50" />
+                    <Setter Property="Padding" Value="65,0,60,0" />
+                    <Setter Property="Text" Value="Application-Level Resource Dictionary is already
+                            applied here in this page and codes are at the App.xaml and App.xaml.cs"/>
+                </Style>
+            </Label.Resources>
+        </Label>
+
+        <Button Text="Submit"></Button>
+
+    </StackLayout>
+
+</ContentPage>

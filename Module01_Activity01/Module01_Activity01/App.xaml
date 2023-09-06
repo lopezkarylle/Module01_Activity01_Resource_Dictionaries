@@ -4,9 +4,11 @@
              x:Class="Module01_Activity01.App">
     <Application.Resources>
 
+        <ResourceDictionary Source="TWICETheme.xaml" />
+
         <!-- Colors -->
         <Color x:Key="BackgroundColor">#c7ffd8</Color>
-        <Color x:Key="PrimaryColor">blue</Color>
+        <Color x:Key="PrimaryColor">Blue</Color>
         <Color x:Key="SecondaryColor">#314e52</Color>
         <Color x:Key="TextColor">Beige</Color>
 
